@@ -8,7 +8,7 @@ const Portfolio = () => {
       <h5>Take A Look At</h5>
       <h2>My Projects</h2>
 
-      <div className="container portfolio__container">
+      <div className="container portfolio__container" data-aos="fade-up" data-aos-duration="1500">
 
       <article className='portfolio__item'>
           <div className="portfolio__item-image">
