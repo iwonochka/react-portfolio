@@ -45,7 +45,7 @@ const Portfolio = () => {
           <p>A responsive business landing page developed with React</p>
           <div className="portfolio__item-cta">
             <a href="https://github.com/iwonochka/react-company-website" className='btn' target='_blank' rel="noreferrer">Github Link</a>
-            <a href="stingray-landing-page.vercel.app/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+            <a href="https://stingray-landing-page.vercel.app/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
           </div>
         </article>
 
