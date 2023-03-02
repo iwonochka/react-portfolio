@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/behnke-iwona/"><BsLinkedin /></a>
-        <a href="https://github.com/iwonochka"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/behnke-iwona/" target='_blank' rel="noreferrer"><BsLinkedin /></a>
+        <a href="https://github.com/iwonochka" target='_blank' rel="noreferrer"><FaGithub /></a>
       </div>
 
       <div className="footer__copyright">
