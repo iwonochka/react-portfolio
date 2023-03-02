@@ -48,4 +48,7 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  .portfolio__item {
+    width: 90vw;
+  }
 }

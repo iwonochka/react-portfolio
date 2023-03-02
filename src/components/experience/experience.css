@@ -42,7 +42,7 @@
   .experience__content {
     padding: 1rem;
   }
-  .about__content p {
+  .experience__content p {
     margin:  1rem 0 1.5rem;
   }
 }
@@ -52,5 +52,11 @@
   .experience__stack {
     width: 100%;
     padding: 2rem 1rem;
+  }
+  .experience__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    row-gap: 6vw;
+    padding: 0;
   }
 }

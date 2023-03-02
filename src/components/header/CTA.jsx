@@ -6,13 +6,13 @@ const CTA = () => {
   return (
     <div className='cta'>
       <a href="#contact" className='btn btn-primary'>Contact me</a>
-      <a href="#contact" className='btn btn-icon'>
+      <a href="https://github.com/iwonochka" className='btn btn-icon'>
         <BsGithub/>
-        <p>GitHub</p>
+        <p className='cta__btn-text'>GitHub</p>
       </a>
-      <a href="#contact" className='btn btn-icon'>
+      <a href="www.linkedin.com/in/behnke-iwona" className='btn btn-icon'>
         <BsLinkedin/>
-        <p>LinkedIn</p>
+        <p className='cta__btn-text'>LinkedIn</p>
       </a>
     </div>
   )

@@ -10,62 +10,50 @@ header {
   position: relative;
 }
 
+.about__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  margin-top: 5% !important;
+}
+
+.about__me {
+  width: 100%;
+  border-radius: 2rem;
+}
+.about__me-image {
+  overflow: hidden;
+  background: transparent;
+  width: 26rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.about__content-text p {
+  margin-bottom: 2rem;
+  color: var(--color-light);
+}
+
 /*------------------CTA (Call To Action)------------------------*/
 .cta {
   margin-top: 2.5rem;
   display: flex;
   gap: 1rem;
-  justify-content: center;
 }
 .btn-icon {
   display: flex !important;
-  gap: 1rem;
+  gap: 1vw;
 }
 .btn-icon > svg {
   align-self: center;
 }
-/*------------------Header Socials------------------------*/
-.header__socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-}
 
-.header__socials::before {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-
-.header__socials::after {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-
-/*------------------Me------------------------*/
-.me {
-  background: transparent;
-  width: 26rem;
-  height: 30rem;
-  position: absolute;
-  left: calc(50% - 13rem);
-  margin-top: 3rem;
-  border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 0 2rem 2rem 2rem;
-
-}
 /*------------------Scroll Down------------------------*/
 .scroll__down {
   position: absolute;
-  right: 2.3rem;
+  right: 0.3rem;
   bottom: 3rem;
   font-weight: 300;
   font-size: 1.5rem;
@@ -73,12 +61,30 @@ header {
   color: var(--color-primary);
 }
 
+
+
 /* -------------------MEDIA QUERIES-----------------------*/
 
 /* MEDIUM DEVICE*/
+
 @media screen and (max-width: 1024px) {
   .header {
     height: 68vh;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+  .about__me {
+    width: 65%;
+    margin: 2rem auto 1rem;
+  }
+  .about__me-image {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+  .about__content-text p {
+    margin:  1rem 0 1.5rem;
   }
 }
 
@@ -89,5 +95,31 @@ header {
   }
   .scroll__down, .header__socials {
     display: none;
+  }
+  .cta__btn-text {
+    display: none;
+  }
+  header {
+    height: 108vh;
+  }
+
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__me-image {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+  .about__content-text p {
+    margin: 1.5rem 0;
+  }
+  .about__me-image {
+    width: 65%;
   }
 }
