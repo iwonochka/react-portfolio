@@ -22,6 +22,12 @@
   overflow: hidden;
 }
 
+.portfolio__item-sm {
+  font-weight: bold;
+  font-size: smaller;
+  margin: 1rem 0;
+}
+
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
 }
